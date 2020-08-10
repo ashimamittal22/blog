@@ -1,0 +1,33 @@
+.CommentBox {
+  width: auto;
+  text-align: left;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px #ccc;
+  box-sizing: border-box;
+}
+
+.Comment {
+  margin: 0 10px;
+}
+
+.EditButton {
+  float: right;
+  margin: 0 10px;
+  color: #ccc;
+  text-align: right;
+  cursor: pointer;
+}
+
+.DeleteButton {
+  float: right;
+  margin: 0 10px;
+  color: #ccc;
+  text-align: right;
+  cursor: pointer;
+}
+.Author {
+  display: inline-block;
+  margin: 0 10px;
+  color: #ccc;
+  text-align: left;
+}

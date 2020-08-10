@@ -1,0 +1,20 @@
+.Tag {
+  display: inline-block;
+  background-color: lightgray;
+  border-radius: 2px;
+  margin: 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.Tag:hover{
+  background-color: slategray;
+}
+
+
+
+.Selectd {
+  background-color: darkgray;
+  text-decoration: underline;
+}
+

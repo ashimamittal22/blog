@@ -1,0 +1,7 @@
+.Articles {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 70%;
+    margin-left: 2%;
+}
