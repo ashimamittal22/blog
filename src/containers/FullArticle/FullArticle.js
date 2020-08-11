@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import axios from '../../axios-blog';
-
-import classes from './FullArticle.module.css';
 import { withRouter } from 'react-router-dom';
+import styles from './FullArticle.module.css';
 import Button from '../../components/UI/Button/Button';
-import { connect } from 'react-redux';
 import Comments from '../Comments/Comments';
+import { connect } from 'react-redux';
 
 class FullArticle extends Component {
 
@@ -72,7 +71,7 @@ class FullArticle extends Component {
         if (this.state.loadedArticle) {
             article = (
                 <React.Fragment>
-                <div className={classes.FullArticle}>
+                <div className={styles.FullArticle}>
                     <h1>{this.state.loadedArticle.title}</h1>
                     <p>{this.state.loadedArticle.body}</p>
                     {showEditDeleteButton}

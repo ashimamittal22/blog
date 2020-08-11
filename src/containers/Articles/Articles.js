@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-
-import Article from '../../components/Article/Article';
 import axios from '../../axios-blog';
-import classes from './Articles.module.css';
+import Article from '../../components/Article/Article';
 import { withRouter } from "react-router-dom";
+import styles from './Articles.module.css';
+
 
 class Articles extends Component {
     state = {
@@ -31,11 +31,6 @@ class Articles extends Component {
         this.loadArticles('/articles?limit=20');
     }
 
-    // componentDidUpdate(){
-    //     //check for the tag property and hit for particular tag
-    //     console.log(this.props);
-    // }
-
     articleSelectedHandler = (slug) => {
         this.props.history.push({ pathname: '/articles/' + slug });
     }
@@ -56,7 +51,7 @@ class Articles extends Component {
 
         return (
             <div>
-                <section className={classes.Articles}>
+                <section className={styles.Articles}>
                     {articles}
                 </section>
             </div>

@@ -1,12 +1,12 @@
 import React from 'react';
-import classes from './Input.module.css'
+import styles from './Input.module.css'
 
-const Input = (props) => {
+const InputComponent = (props) => {
   let inputElement = null;
-  const inputClasses = [classes.InputElement];
+  const inputClasses = [styles.InputElement];
 
   if (props.invalid && props.shouldValidate && props.touched) {
-    inputClasses.push(classes.Invalid);
+    inputClasses.push(styles.Invalid);
   }
 
   switch (props.elementType) {
@@ -54,4 +54,4 @@ const Input = (props) => {
   );
 }
 
-export default Input;
+export default InputComponent;

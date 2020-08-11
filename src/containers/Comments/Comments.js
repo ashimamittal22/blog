@@ -2,10 +2,10 @@ import React, { Component } from "react";
 
 import Comment from '../../components/Comment/Comment';
 import axios from '../../axios-blog';
-import classes from './Comments.module.css';
 import { connect } from "react-redux";
-import Input from "../../components/UI/Input/Input";
+import styles from './Comments.module.css';
 import Button from "../../components/UI/Button/Button";
+import Input from "../../components/UI/Input/Input";
 import { updateObject } from "../../shared/utility";
 
 class Comments extends Component {
@@ -16,7 +16,7 @@ class Comments extends Component {
       elementConfig: {
         required: true,
         rows: '3',
-        placeholder: "Write and add a comment..."
+        placeholder: "Write a comment here..."
       },
       value: '',
     }
@@ -103,9 +103,9 @@ class Comments extends Component {
       })
     }
 
-    let addComment = <h3 className={classes.AddComment}> Please login to post a comment</h3>;
+    let addComment = <h3 className={styles.AddComment}> Please login to post a comment</h3>;
     if (this.props.isAuthenticated) {
-      addComment = (<div className={classes.AddComment}>
+      addComment = (<div className={styles.AddComment}>
         <form onSubmit={this.postCommentHandler}>
           <Input
             elementType={this.state.comment.elementType}
@@ -122,7 +122,7 @@ class Comments extends Component {
       <React.Fragment>
         {addComment}
         <div>
-          <section className={classes.Comments}>
+          <section className={styles.Comments}>
             Comments:-
                     {comments}
           </section>

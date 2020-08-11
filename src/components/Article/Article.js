@@ -1,12 +1,12 @@
 import React from 'react';
 
-import classes from './Article.module.css';
+import styles from './Article.module.css';
 
-const Article = (props) => (
-    <article className={classes.Article} onClick={props.clicked}>
+const ArticleComponent = (props) => (
+    <article className={styles.Article} onClick={props.clicked}>
         <h1>{props.title}</h1>
-        <div className={classes.Author}>{props.author}</div>
+        <div className={styles.Author}>{props.author}</div>
     </article>
 );
 
-export default Article;
+export default ArticleComponent;

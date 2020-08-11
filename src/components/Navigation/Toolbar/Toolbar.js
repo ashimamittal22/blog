@@ -1,12 +1,12 @@
 import React from 'react';
 import Logo from '../../Logo/Logo';
 import NavigationItems from '../NavigationItems/NavigationItems';
-import classes from './Toolbar.module.css';
+import styles from './Toolbar.module.css';
 
-const Toolbar = (props) => {
+const ToolbarComponent = (props) => {
   return (
-    <header className = {classes.Toolbar}>
-      <div className = {classes.Logo}>
+    <header className = {styles.Toolbar}>
+      <div className = {styles.Logo}>
         <Logo/>
       </div>
       <nav>
@@ -16,4 +16,4 @@ const Toolbar = (props) => {
   );
 }
 
-export default Toolbar;
+export default ToolbarComponent;

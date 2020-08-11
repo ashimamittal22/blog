@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 import axios from '../../axios-blog';
-import classes from './Tags.module.css';
 import Tag from "../../components/Tag/Tag";
+import styles from './Tags.module.css';
 import { withRouter } from "react-router-dom";
 
 class Tags extends Component {
@@ -38,7 +38,7 @@ class Tags extends Component {
         }
 
         return (
-            <div className={classes.Tags}>
+            <div className={styles.Tags}>
                 <h3>Popular Tags:-</h3>
                 <section>
                     {tags}

@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import deepClone from 'lodash/cloneDeep';
 import axios from '../../axios-blog';
-
-import classes from './NewArticle.module.css';
 import { Redirect } from 'react-router';
-import Input from '../../components/UI/Input/Input';
-import Button from '../../components/UI/Button/Button';
 import Spinner from '../../components/UI/Spinner/Spinner';
+import Input from '../../components/UI/Input/Input';
+import styles from './NewArticle.module.css';
+import Button from '../../components/UI/Button/Button';
 import { updateObject, checkValidity } from '../../shared/utility';
 
 class NewArticle extends Component {
@@ -18,7 +17,7 @@ class NewArticle extends Component {
                 elementConfig: {
                     required: true,
                     type: 'text',
-                    placeholder: 'Article Title'
+                    placeholder: 'Title'
                 },
                 value: '',
                 validation: {
@@ -33,7 +32,7 @@ class NewArticle extends Component {
                 elementConfig: {
                     required: true,
                     type: 'text',
-                    placeholder: "What is this article about?"
+                    placeholder: "What is the article about?"
                 },
                 value: '',
                 validation: {
@@ -49,7 +48,7 @@ class NewArticle extends Component {
                     required: true,
                     rows: '4',
                     type: 'text',
-                    placeholder: "Write your article here"
+                    placeholder: "Write your article here..."
                 },
                 value: '',
                 validation: {
@@ -182,7 +181,7 @@ class NewArticle extends Component {
         }
 
         return (
-            <div className={classes.NewArticle}>
+            <div className={styles.NewArticle}>
                 {redirect}
                 {errorMessage}
                 <form onSubmit={this.postDataHandler}>

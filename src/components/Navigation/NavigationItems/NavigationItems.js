@@ -1,10 +1,10 @@
 import React from 'react';
 import NavigationItem from './NavigationItem/NavigationItem';
-import classes from './NavigationItems.module.css';
+import styles from './NavigationItems.module.css';
 
-const NavigationItems = (props) => {
+const NavigationItemsComponent = (props) => {
   return (
-    <ul className={classes.NavigationItems}>
+    <ul className={styles.NavigationItems}>
       <NavigationItem link='/articles' exact> Home </NavigationItem>
       {
         props.isAuthenticated ?
@@ -19,4 +19,4 @@ const NavigationItems = (props) => {
   );
 }
 
-export default NavigationItems
+export default NavigationItemsComponent

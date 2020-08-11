@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
-
-import Input from '../../components/UI/Input/Input';
 import Button from '../../components/UI/Button/Button';
+import Input from '../../components/UI/Input/Input';
 import Spinner from '../../components/UI/Spinner/Spinner';
-import classes from './Auth.module.css';
 import * as actions from '../../store/actions/index';
+import styles from './Auth.module.css';
 import { updateObject, checkValidity } from '../../shared/utility';
 
 
@@ -130,7 +129,7 @@ class Auth extends Component {
     }
 
     return (
-      <div className={classes.Auth}>
+      <div className={styles.Auth}>
         {authRedirect}
         {errorMessage}
         <form onSubmit={this.submitHandler}>

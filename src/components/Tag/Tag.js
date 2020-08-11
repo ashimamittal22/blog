@@ -1,10 +1,10 @@
 import React from 'react';
 
-import classes from './Tag.module.css';
+import styles from './Tag.module.css';
 
-const Tag = (props) => {
+const TagComponent = (props) => {
   return (
-  <span onClick = {props.clicked} className={[classes.Tag, classes.Selected].join(' ')}>{props.children}</span>)
+  <span onClick = {props.clicked} className={[styles.Tag, styles.Selected].join(' ')}>{props.children}</span>)
 }
 
-export default Tag;
+export default TagComponent;

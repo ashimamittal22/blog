@@ -1,15 +1,16 @@
-.Comments {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  width: 80%;
-  margin: auto;
-}
-
 .AddComment {
   width: 80%;
   margin: 20px auto;
+  background-color: rgb(209, 220, 230);
   border: 1px solid #eee;
   box-shadow: 0 2px 3px #ccc;
-  background-color: rgb(209, 220, 230);
 }
+
+.Comments {
+  display: flex;
+  flex-flow: column;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+}
+

@@ -1,11 +1,11 @@
 import React from 'react';
 import blogLogo from '../../assets/Logo/blog.png';
-import classes from './Logo.module.css';
+import styles from './Logo.module.css';
 
-const Logo = (props) => (
-  <div className={classes.Logo}>
+const LogoComponent = (props) => (
+  <div className={styles.Logo}>
     <img src={blogLogo} alt='Blog' />
   </div>
 );
 
-export default Logo;
+export default LogoComponent;
